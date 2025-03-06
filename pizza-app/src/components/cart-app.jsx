@@ -3,10 +3,13 @@ const intl = new Intl.NumberFormat("en-US", {
   currency: "USD", // feel free to change to your local currency
 });
 
+// eslint-disable-next-line react/prop-types
 export default function Cart({ cart, checkout }) {
   let total = 0;
+  // eslint-disable-next-line react/prop-types
   for (let i = 0; i < cart.length; i++) {
     const current = cart[i];
+    // eslint-disable-next-line react/prop-types
     total += current.pizza.sizes[current.size];
   }
   return (
