@@ -1,11 +1,16 @@
 
 
-const AppBar = () => {
+
+export default function Header() {
+
   return (
-    <div>
-      <h1 className="logo">Padre Gino&apos;s Pizza</h1>
-    </div>
+    <nav>
+  
+        <h1 className="logo">Padre Gino&apos;s Pizza</h1>
+
+      <div className="nav-cart">
+        🛒<span className="nav-cart-number">5</span>
+      </div>
+    </nav>
   );
 }
-
-export default AppBar
